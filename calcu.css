@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(253, 253, 253);
+}
+
+.base {
+  background-color: rgb(19, 18, 18);
+  max-width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 20px;
+  width: auto;
+}
+input {
+  border: 1px solid rgb(235, 232, 232);
+  height: 60px;
+  width: 80%;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: rgb(219, 252, 252);
+  text-align: right;
+  box-sizing: border-box; /*keeps height consistent*/
+  padding: 20px;
+}
+.equal {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  background-color: rgb(248, 95, 6);
+  border: none;
+  color: #ffffff;
+
+  font-size: 19px;
+}
+.buttons {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.button {
+  border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+
+  font-size: 19px;
+}
+.button:hover {
+  cursor: pointer;
+}
+.equal:hover {
+  cursor: pointer;
+}
+.button:active {
+  transform: scale(0.9);
+}
+.equal:active {
+  transform: scale(0.9);
+  box-shadow: 1px 1px 6px rgb(245, 220, 245), -1px -1px 6px rgb(245, 220, 245);
+}
+.display {
+  font-family: "Roboto Mono", monospace; /* Monospaced for alignment */
+  font-size: 2rem; /* Large enough to read */
+  font-weight: bold; /* Makes numbers pop */
+  text-align: right; /* Numbers align to the right */
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+.in {
+  background-color: #3b3838;
+  color: hsl(0, 0%, 100%);
+}
+.out {
+  background-color: hsl(0, 3%, 16%);
+  color: #ffffff;
+}
