@@ -63,7 +63,6 @@ input {
 }
 .equal:active {
   transform: scale(0.9);
-  box-shadow: 1px 1px 6px rgb(245, 220, 245), -1px -1px 6px rgb(245, 220, 245);
 }
 .display {
   font-family: "Roboto Mono", monospace; /* Monospaced for alignment */
