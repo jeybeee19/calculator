@@ -89,7 +89,9 @@ function calculate() {
       throw new Error("Invalid calculation");
     }
     if (result === 2) {
-      window.open("https://www.youtube.com/watch?v=72AlNMT-XME", "_blank");
+      setTimeout(() => {
+        window.open("https://www.youtube.com/watch?v=72AlNMT-XME", "_blank");
+      }, 3000);
     }
     expression = result.toString(); // to continue
     updateDisplay(expression);
