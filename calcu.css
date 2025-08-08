@@ -83,3 +83,37 @@ input {
   background-color: hsl(0, 3%, 16%);
   color: #ffffff;
 }
+.toggle {
+  width: 50px;
+  height: 25px;
+  background: #ccc;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+}
+
+.circle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+/* Dark mode button color */
+.toggle.active {
+  background: #333;
+}
+
+.toggle.active .circle {
+  transform: translateX(25px);
+}
+body.dark {
+  background: #222;
+  color: white;
+}

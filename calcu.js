@@ -89,7 +89,7 @@ function calculate() {
       throw new Error("Invalid calculation");
     }
     if (result === 2) {
-      window.location.href = "https://www.youtube.com/watch?v=72AlNMT-XME";
+      window.open("https://www.youtube.com/watch?v=72AlNMT-XME", "_blank");
     }
     expression = result.toString(); // to continue
     updateDisplay(expression);
@@ -111,3 +111,18 @@ function updateDisplay(value) {
     display.style.fontSize = currentSize - 1 + "px";
   }
 }
+const toggleBtn = document.querySelector(".toggle");
+const bgMusic = document.getElementById("bg-music");
+toggleBtn.addEventListener("click", () => {
+  // Move slider
+  toggleBtn.classList.toggle("active");
+
+  // Switch dark mode
+  document.body.classList.toggle("dark");
+
+  if (toggleBtn.classList.contains("active")) {
+    setTimeout(() => {
+      bgMusic.play();
+    }, 3000);
+  }
+});
